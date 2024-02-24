@@ -6,6 +6,8 @@ import Landing from './screens/Landing';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
 import Airtime from "./screens/Airtime"
+import Data from "./screens/Data"
+import AirTimeEach from "./screens/Airtime-Each"
 
 import BottomNav from './components/BottomNav';
 import { useState } from 'react';
@@ -30,6 +32,8 @@ export default function App() {
           <Stack.Screen name="login" component={Login}/>
           <Stack.Screen name="signup" component={Signup}/>
           <Stack.Screen name="airtime" component={Airtime}/>
+          <Stack.Screen name="airtime-each" component={AirTimeEach}/>
+          <Stack.Screen name="data" component={Data}/>
           <Stack.Screen name="bottomNav" component={BottomNav}/>
 
         </Stack.Navigator>

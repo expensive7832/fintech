@@ -1,5 +1,5 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Main from '../screens/Main';
+import Home from '../screens/Home';
 import { AntDesign } from '@expo/vector-icons';
 import Rewards from '../screens/Rewards';
 
@@ -8,7 +8,7 @@ const Tab = createBottomTabNavigator();
 function BottomNav() {
   return (
     <Tab.Navigator
-    initialRouteName='main' 
+    initialRouteName='home' 
     screenOptions={({route}) =>({
         headerShown: false,
         tabBarActiveTintColor: "#e94059",
@@ -39,7 +39,7 @@ function BottomNav() {
     
         
     >
-      <Tab.Screen name="main" component={Main} />
+      <Tab.Screen name="home" component={Home} />
       <Tab.Screen name="rewards" component={Rewards} />
     </Tab.Navigator>
   );
